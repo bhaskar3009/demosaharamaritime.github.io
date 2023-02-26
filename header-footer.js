@@ -34,8 +34,17 @@ class MyHeader extends HTMLElement{
                             <li><a href="index.html">Home</a>
                             </li>
 
-                            <li><a href="page-about.html">About</a></li>
+                            <li class="dropdown"><a href="page-about.html">About us</a>
+                            <ul>
+                                <li class="dropdown"><a href="#">The team</a>
+                                    <ul>
+                                    <li><a href="page-BOD.html">Board of Directors</a></li>
+                                    <li><a href="page-List-KMP.html">List of KMP</a></li>
+                                    </ul>
+                                </li>
 
+                            </ul>
+                            </li>
                             <li><a href="page-services.html">Services</a>
                             </li>
 
@@ -45,7 +54,6 @@ class MyHeader extends HTMLElement{
 
                             <li class="dropdown"><a href="#">Investor</a>
                                 <ul>
-                                    <li><a href="#">Commtte Board</a></li>
                                     <li><a href="#">Financial Results</a></li>
                                     <li><a href="#">Shareholding Patterns</a></li>
                                     <li><a href="#">Shareholding Documents</a></li>

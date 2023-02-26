@@ -8283,7 +8283,8 @@ Page Title
   background-color: rgb(69, 69, 227);
   color: var(--text-color-bg-theme-color2);
 }
-.services-details__content .feature-list .single-item:hover .title {
+.services-details__content .featu
+re-list .single-item:hover .title {
   color: #fff;
 }
 .services-details__content .feature-list .single-item:hover .icon-box {
@@ -8294,12 +8295,19 @@ Page Title
 # Project Details
 --------------------------------------------------------------*/
 .project-details__img {
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .project-details__img img {
-  width: 100%;
-  border-radius: 10px;
+  border-color: #113629;
+}
+#lokmp{
+  width: 800px;
+  border-width: 10px;
+  border-radius: 20px;
+  border-style:ridge;
+  padding: 5px;
+  border-color: #cdcdd8;
 }
 
 .project-details__content {
@@ -8323,6 +8331,7 @@ Page Title
   border-radius: 50%;
   height: 300px;
   width: 300px;
+  
 }
 #BoDAbt2{
   border-radius: 50%;
@@ -9345,9 +9354,15 @@ Sidebar
 }
 
 .team-details__top-left {
-  position: relative;
-  display: block;
-  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.alignmt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-details__top-img {
@@ -9355,9 +9370,9 @@ Sidebar
   display: block;
   text-align: center;
 }
-.team-details__top-img img {
+/* .team-details__top-img img {
   width: 100%;
-}
+} */
 
 .team-details__big-text {
   font-size: 80px;
@@ -10015,6 +10030,7 @@ Sidebar
    font-size: 17px ;
   }
 }
+
 
 #kmp_head{
 
