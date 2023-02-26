@@ -9392,10 +9392,7 @@ Sidebar
   position: relative;
   display: block;
   margin-left: 70px;
-  @media only screen and (max-width: 991px){
-    margin-top: 70px;
-    margin-left: 0;
-  }
+  
 }
 @media only screen and (max-width: 991px) {
   .team-details__top-right {
@@ -9403,6 +9400,25 @@ Sidebar
     margin-left: 0;
   }
 }
+
+/* .con{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .con {
+    flex-direction: column;
+  }
+ 
+  #r1 {
+    order: 2;
+  }
+} */
+
+
 
 .team-details__top-content {
   position: relative;

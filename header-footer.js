@@ -54,6 +54,7 @@ class MyHeader extends HTMLElement{
 
                             <li class="dropdown"><a href="#">Investor</a>
                                 <ul>
+                                <li><a href="#">Committee Board</a></li>
                                     <li><a href="#">Financial Results</a></li>
                                     <li><a href="#">Shareholding Patterns</a></li>
                                     <li><a href="#">Shareholding Documents</a></li>
