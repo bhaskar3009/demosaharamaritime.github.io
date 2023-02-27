@@ -9400,6 +9400,12 @@ Sidebar
     margin-left: 0;
   }
 }
+@media (max-width: 991.20px){
+.box{
+  display: flex;
+  flex-direction: column-reverse;
+}
+}
 
 /* .con{
   display: flex;
