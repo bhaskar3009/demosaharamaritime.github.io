@@ -59,7 +59,7 @@ class MyHeader extends HTMLElement{
                                     
                                 </ul>
                             </li>
-                            <li><a href="page-awards.html">Awards & Certificates</a></li>
+                            <li><a href="">Awards & Certificates</a></li>
                             <li><a href="page-contact.html">Contact</a></li>
 
                         </ul>

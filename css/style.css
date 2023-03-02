@@ -204,7 +204,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.04em;
   font-family: var(--sans-serif);
 }
-
+.text{
+  text-align:justify;
+  /* text-justify:inter-word; */
+}
 h1 {
   font-size: 90px;
 }
@@ -9437,7 +9440,7 @@ Sidebar
 }
 
 .team-details__top-name {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bolder;
   color: #1e2434;
   line-height: 50px;
