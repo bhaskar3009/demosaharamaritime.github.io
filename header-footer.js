@@ -2,20 +2,7 @@ class MyHeader extends HTMLElement{
     connectedCallback(){
       this.innerHTML = `
       <header class="main-header header-style-one">
-        <!-- Header Top -->
-        <div class="header-top">
-            <div class="top-left1">
-                <!-- Info List -->
-                <ul class="list-style-one">
-                    <li><i class="fa fa-map-marker-alt"></i> 106, Floor-1, Plot-140, Plaza Centre, Sheriff Devji Street Mumbai 400003</li>
-                    <li><i class="fa fa-clock"></i> Mon-Sat: 10am - 06pm</li> 
-                    <li><i class="fa fa-phone-volume"></i> <a href="#">+91 9819980001</a></li>
-                </ul>
-            </div>
-            
-           
-        </div>
-        <!-- Header Top -->
+        
 
         <!-- Header Lower -->
         <div class="header-lower">
@@ -72,7 +59,7 @@ class MyHeader extends HTMLElement{
                                     
                                 </ul>
                             </li>
-
+                            <li><a href="page-awards.html">Awards & Certificates</a></li>
                             <li><a href="page-contact.html">Contact</a></li>
 
                         </ul>
@@ -135,7 +122,7 @@ class MyHeader extends HTMLElement{
                         <div class="contact-info-box">
                             <span class="icon lnr-icon-clock"></span>
                             <span class="title">Send Email</span>
-                            Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                            Mon - Sat 11.00 AM- 07.00 PM, Sunday - CLOSED
                         </div>
                     </li>
                 </ul>
@@ -188,7 +175,7 @@ class MyFooter extends HTMLElement{
                         <div class="inner-box">
                             <div class="icon-box"><i class="icon flaticon-international-shipping-2"></i></div>
                             <h4 class="title">Address</h4>
-                            <div class="text">106, Floor-1, Plot-140, Plaza Shopping Centre, Sheriff Devji Street Mumbai 400003</div>
+                            <div class="text">105, 106 & 108, 1st Floor, Plot no. 142, Plaza Shopping Centre, Sheriff Devji Street, Chakala Market, Mandvi, Mumbai - 400003</div>
                         </div>
                     </div>
 
@@ -217,7 +204,7 @@ class MyFooter extends HTMLElement{
                         <div class="inner-box">
                             <div class="icon-box"><i class="icon flaticon-24-hours-2"></i></div>
                             <h4 class="title">Timing</h4>
-                            <div class="text">Mon - Sat: 8 am - 5 pm, Sunday: CLOSED</div>
+                            <div class="text">Mon - Sat: 11.00 AM-07.00 PM Sunday: CLOSED</div>
                         </div>
                     </div>
                 </div>
