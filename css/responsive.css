@@ -1,4 +1,4 @@
-/* Tonis | Logistics HTML Template  */
+/* Sahara Maritime Template  */
 
 @media only screen and (max-width: 1700px){
 	.main-menu .navigation>li{
@@ -28,18 +28,6 @@
 	.testimonial-section-two .float-image{
 		display: none;
 	}
-
-	.header-style-two .header-lower .logo-box{
-		margin-right: 40px;
-	}
-
-	.header-style-two .header-lower{
-		padding-right: 30px;
-	}
-
-	.header-style-two .header-lower .logo-box{
-		min-width: 200px;
-	}
 }
 
 @media only screen and (max-width: 1439px){
@@ -55,20 +43,17 @@
 }
 
 @media only screen and (max-width: 1199px){
-	.header-top{
-		margin-left: 0;
-		padding:0 15px
-	}
+	
 	
 	.header-lower .logo-box{
 		min-width: auto;
 		min-height: auto;
-		padding: 18px 18px;
-		margin-top: 0;
+		padding: 0;
+		margin-top: -40px;
 	}
 
 	.header-lower .logo-box .logo img{
-		max-height: 40px;
+		min-height: 80px;
 	}
 
 
@@ -177,7 +162,7 @@
 	}
 
 	.header-lower .logo-box {
-		padding: 10px
+		/* padding: 10px */
 	}
 
 	.main-header .ui-btn {

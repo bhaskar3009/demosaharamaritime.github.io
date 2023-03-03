@@ -67,10 +67,7 @@ class MyHeader extends HTMLElement{
                     <!-- Main Menu End-->
 
                     <div class="outer-box">
-
-
-                        <a href="page-get-quote.html" class="theme-btn btn-style-one alternate"><span class="btn-title">Get A Quote</span></a>
-
+                    
                         <!-- Mobile Nav toggler -->
                         <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
                     </div>

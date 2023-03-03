@@ -1,8 +1,4 @@
-/* Tonis | Logistics HTML Template
-
-Template Name: Tonis
-Version: 1.0.0
-License: copyright commercial
+/*
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -438,37 +434,6 @@ Scroll To Top style
   transition: all 300ms ease;
 }
 .list-style-one li a:hover {
-  color: #ffffff;
-}
-
-/*=== List Style Two ===*/
-.list-style-two {
-  position: relative;
-}
-.list-style-two li {
-  position: relative;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #ffffff;
-  padding-left: 35px;
-  margin-bottom: 8px;
-}
-.list-style-two li i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--theme-color3-light);
-  font-size: 16px;
-  line-height: 30px;
-}
-.list-style-two li a {
-  display: inline-block;
-  color: #ffffff;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.list-style-two li a:hover {
   color: #ffffff;
 }
 
@@ -1609,13 +1574,13 @@ Main Header
 
 .header-lower {
   position: relative;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  -webkit-transition: all .5ss ease;
+  transition: all .5s ease;
 }
 .header-lower .logo-box {
   position: relative;
   /* min-width: 265px; */
-  min-height: 110px;
+  /* min-height: 110px; */
   margin-right: 20px;
 
   background-color: var(--bg-theme-color4);
@@ -1658,6 +1623,9 @@ Main Header
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+nav{
+
+}
 .main-header .main-box .nav-outer {
   position: relative;
   display: -webkit-box;
@@ -1686,7 +1654,9 @@ Main Header
 
 .main-menu .navigation {
   position: relative;
-  margin-top: -40px;
+}
+.main-menu .navigation > ul{
+  display: inline-block;
 }
 
 .main-menu .navigation > li {
@@ -1940,157 +1910,6 @@ Main Header
 }
 
 /*** 
-
-====================================================================
-Header Style Two
-====================================================================
-
-***/
-.header-style-two {
-  position: relative;
-}
-.header-style-two .header-top {
-  position: relative;
-  margin: 0;
-  padding: 0 60px;
-  background-color: #ffffff;
-}
-.header-style-two .top-right {
-  padding-right: 0;
-}
-.header-style-two .social-icon-one li a {
-  font-size: 12px;
-  color: var(--theme-color1);
-}
-.header-style-two .social-icon-one li a:hover {
-  color: var(--theme-color1);
-}
-
-.header-style-two .header-lower {
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  z-index: 99;
-  padding-right: 60px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.header-style-two .header-lower .logo-box {
-  min-width: 270px;
-  background-color: var(--bg-theme-color2);
-  border-right: 5px solid var(--border-theme-color3-light);
-  margin: 0 0 0 0;
-}
-.header-style-two .header-lower .ui-btn {
-  color: #fff;
-  margin-right: 0;
-  margin-left: 30px;
-}
-.header-style-two .header-lower .ui-btn:hover {
-  color: var(--theme-color3);
-}
-.header-style-two .header-lower .theme-btn {
-  padding: 15px 30px;
-  line-height: 30px;
-  border-radius: 5px;
-  margin-left: 30px;
-}
-
-.header-style-two .main-menu .navigation > li {
-  padding: 35px 0;
-}
-
-.header-style-two .main-menu .navigation > li > a {
-  color: #fff;
-}
-
-.header-style-two .main-menu .navigation > li:hover > a,
-.header-style-two .main-menu .navigation > li.current > a {
-  color: #fff;
-  font-size: 16px;
-}
-
-.header-style-two .main-menu .navigation > li:before {
-  bottom: 40px;
-}
-
-/*** 
-
-====================================================================
-Sticky Header
-====================================================================
-
-***/
-.sticky-header {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  padding: 0px 0px;
-  z-index: 99999;
-  background: #ffffff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-}
-
-.sticky-header.fixed-header {
-  opacity: 1;
-  z-index: 9999;
-  visibility: visible;
-}
-
-.sticky-header .logo {
-  padding: 10px 0;
-}
-.sticky-header .logo img {
-  max-height: 40px;
-}
-.sticky-header .nav-outer {
-  position: relative;
-  background: none;
-}
-.sticky-header .inner-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.sticky-header .main-menu .navigation > li {
-  margin: 0;
-  margin-left: 40px;
-  padding: 20px 0;
-}
-
-.sticky-header .main-menu .navigation > li > a {
-  color: #707070;
-}
-
-.sticky-header .main-menu .navigation > li.current > a,
-.sticky-header .main-menu .navigation > li:hover > a {
-  color: var(--theme-color2);
-}
-
-.sticky-header .main-menu .navigation > li:before {
-  display: none;
-}
-
-.sticky-header .outer-box,
-.sticky-header .navbar-header {
-  display: none;
-}
-
-.sticky-header .mobile-nav-toggler {
-  color: var(--theme-color1);
-}
 
 /*** 
 
