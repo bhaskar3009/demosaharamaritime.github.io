@@ -1638,6 +1638,8 @@ Main Header
 .main-header .logo {
   position: relative;
   display: block;
+  margin-top: 40px;
+  padding: 5px;
 }
 .main-header .logo img {
   max-width: 100%;
@@ -1684,7 +1686,7 @@ Main Header
 
 .main-menu .navigation {
   position: relative;
-  margin: 0px;
+  margin-top: -40px;
 }
 
 .main-menu .navigation > li {
@@ -1908,7 +1910,7 @@ Main Header
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  /* height: 100%; */
 }
 .main-header .outer-box .theme-btn {
   display: block;
