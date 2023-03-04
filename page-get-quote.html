@@ -247,7 +247,29 @@
 
 <script>
 	function senddata(){
-		
+		let name = document.getElementById("name").value;
+	let mail = document.getElementById("mail").value;
+	let subject = document.getElementById("subject").value;
+	let phone = document.getElementById("phone").value;
+	let cname = document.getElementById("cname").value;
+	let gstno = document.getElementById("gstno").value;
+	let faddrss = document.getElementById("faddrss").value;
+	let service = document.getElementById("service").value;
+	let country_origin = document.getElementById("country_origin").value;
+	let country_dest = document.getElementById("country_dest").value;
+	let container_type = document.getElementById("container_type").value;
+	let shippmentdate = document.getElementById("shippmentdate").value;
+	let duedate = document.getElementById("duedate").value;
+	let otherinfo = document.getElementById("otherinfo").value;
+	let addinfo = document.getElementById("addinfo").value;	
+
+	if (name == null || name == "" || mail == null || mail == "" || subject == null || subject == "" || phone == null || phone == "" || cname == null || cname == "" || faddrss == null || faddrss == "" || service == null || service == "" || country_origin == null || country_origin == "" || country_dest == null || country_dest == "" || shippmentdate == null || shippmentdate == "") {
+		alert("Please enter --> all the REQUIRED ( * ) Fields. Can't be blank or empty !!!");
+		return false; }
+	else{
+		return send()
+	}
+
 	}
 	function send(){
 	let name = document.getElementById("name").value;
@@ -271,7 +293,7 @@ console.log(body)
 	// console.log(body)
 	Email.send({
 	SecureToken :"6819767b-bb1e-42cd-9f70-2041df18a2a5",
-    To : 'bhaskarchavan2001@gmail.com',
+    To : 'karuneshtest16@gmail.com',
     From : "mailsaharamaritime@gmail.com",
     Subject : subject,
     Body : body
