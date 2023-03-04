@@ -103,18 +103,18 @@
 						<h2>Feel free to write</h2>
 					</div>
 					<!-- Contact Form -->
-					<form id="contact_form" name="contact_form" class="" action="https://kodesolution.com/html/2022/tronis-html/includes/sendmail.php" method="post">
+					<form id="contact_form" name="contact_form" class="" action="" method="">
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Name <small>*</small></label>
-									<input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+									<input id="name" name="form_name" class="form-control required" type="text" placeholder="Enter Name">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Email <small>*</small></label>
-									<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+									<input id="mail" name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
 								</div>
 							</div>
 						</div>
@@ -122,23 +122,23 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Subject <small>*</small></label>
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+									<input id="subject" name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Phone</label>
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+									<input id="phone" name="form_phone" class="form-control required" type="text" placeholder="Enter Phone">
 								</div>
 							</div>
 						</div>
 						<div class="mb-3">
 							<label>Message</label>
-							<textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+							<textarea id="msg" name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
 						</div>
 						<div class="mb-3">
 							<input name="form_botcheck" class="form-control" type="hidden" value="" />
-							<button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
+							<button type="submit" onclick="sendemail()" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
 							<button type="reset" class="theme-btn btn-style-one"><span class="btn-title">Reset</span></button>
 						</div>
 					</form>
@@ -184,6 +184,7 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <!-- form submit -->
 <script src="js/jquery.validate.min.js"></script>
@@ -212,6 +213,28 @@
 			}
 		});
 	})(jQuery);
+</script>
+<script>
+	br
+	function sendemail(){
+	let name = document.getElementById("name").value;
+	let mail = document.getElementById("mail").value;
+	let subject = document.getElementById("subject").value;
+	let phone = document.getElementById("phone").value;
+	let msg = document.getElementById("msg").value;	
+let body="Name: "+name+"<br> Email: "+mail+"<br> subject: "+subject+"<br> phone: "+phone+"<br> message: "+msg
+// console.log(body)
+	Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "mailsaharamaritime@gmail.com",
+    Password : "DC9E1BE02C4AA0C26A31FC6126FC2D918EBF",
+    To : 'bhaskarchavan2001@gmail.com',
+    From : "mailsaharamaritime@gmail.com",
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert(message)
+);}
 </script>
 </body>
 
