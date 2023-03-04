@@ -133,14 +133,14 @@
 								</div>
 								<div class="col-sm-6">
 									<div class="mb-3">
-										<label>Phone</label>
+										<label>Phone <small>*</small> </label>
 										<input id="phone" name="form_phone" class="form-control" type="text"
 											placeholder="Enter Phone" required>
 									</div>
 								</div>
 							</div>
 							<div class="mb-3">
-								<label>Message</label>
+								<label>Message <small>*</small></label>
 								<textarea id="msg" name="form_message" class="form-control" rows="5"
 									placeholder="Enter Message" required></textarea>
 							</div>
@@ -228,22 +228,19 @@
 	</script>
 	<script>
 		function sendemail() {
-			const requiredFields = document.querySelectorAll('[required]');
-
-			form.addEventListener('submit', (event) => {
-				event.preventDefault();
-
-				let allFieldsFilled = true;
-
-				requiredFields.forEach((field) => {
-					if (!field.value) {
-						allFieldsFilled = false;
-
-					} else {
-						return send;
-					}
-				});
-			});
+			let name = document.getElementById("name").value;
+			let mail = document.getElementById("mail").value;
+			let subject = document.getElementById("subject").value;
+			let phone = document.getElementById("phone").value;
+			let msg = document.getElementById("msg").value;
+			if (name == null || name == "" || mail == null || mail == "" || subject == null || subject == "" || phone == null || phone == "" || msg == null || msg == "") {
+				alert("Please enter --> all the REQUIRED ( * ) Fields. Can't be blank or empty !!!");
+				return false; }
+			else{
+				return send()
+			}
+		
+			
 		}
 		function send() {
 			let name = document.getElementById("name").value;
