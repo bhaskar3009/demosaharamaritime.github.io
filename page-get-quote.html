@@ -70,13 +70,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Name <small>*</small></label>
-									<input id="name" name="form_name" class="form-control required" type="text" placeholder="Enter Name">
+									<input id="name" name="form_name" class="form-control" type="text" placeholder="Enter Name" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Email <small>*</small></label>
-									<input id="mail" name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+									<input id="mail" name="form_email" class="form-control email" type="email" placeholder="Enter Email" required>
 								</div>
 							</div>
 						</div>
@@ -84,13 +84,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Subject <small>*</small></label>
-									<input id="subject" name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+									<input id="subject" name="form_subject" class="form-control" type="text" placeholder="Enter Subject" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Phone *</label>
-									<input id="phone" name="form_phone" class="form-control required" type="text" placeholder="Enter Phone">
+									<input id="phone" name="form_phone" class="form-control" type="text" placeholder="Enter Phone" required>
 								</div>
 							</div>
 						</div>
@@ -98,19 +98,19 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Company Name <small>*</small></label>
-									<input id="cname" name="form_subject" class="form-control required" type="text" placeholder="Enter Company Name">
+									<input id="cname" name="form_subject" class="form-control" type="text" placeholder="Enter Company Name" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>GST No.</label>
-									<input id="gstno" name="form_phone" class="form-control" type="text" placeholder="Enter GST No.">
+									<input id="gstno" name="form_phone" class="form-control" type="text" placeholder="Enter GST No." required>
 								</div>
 							</div>
 						</div>
 						<div class="mb-3">
 							<label>Full Address *</label>
-							<textarea id="faddrss" name="form_message" class="form-control required" rows="5" placeholder="Enter Address"></textarea>
+							<textarea id="faddrss" name="form_message" class="form-control" rows="5" placeholder="Enter Address" required></textarea>
 						</div>
 
 
@@ -123,13 +123,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Service Type<small>*</small></label>
-									<input id="service" name="form_name" class="form-control required" type="text" placeholder="Enter Service Type">
+									<input id="service" name="form_name" class="form-control" type="text" placeholder="Enter Service Type" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Country of Origin<small>*</small></label>
-									<input id="country_origin" name="form_email" class="form-control required text" type="text" placeholder="Enter Country of Origin">
+									<input id="country_origin" name="form_email" class="form-control text" type="text" placeholder="Enter Country of Origin" required>
 								</div>
 							</div>
 						</div>
@@ -137,13 +137,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Country of Destination<small>*</small></label>
-									<input id="country_dest" name="form_subject" class="form-control required" type="text" placeholder="Enter Country of Destination">
+									<input id="country_dest" name="form_subject" class="form-control" type="text" placeholder="Enter Country of Destination" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Container Type</label>
-									<input id="container_type" name="form_phone" class="form-control required" type="text" placeholder="Enter Container Type">
+									<input id="container_type" name="form_phone" class="form-control" type="text" placeholder="Enter Container Type" required>
 								</div>
 							</div>
 						</div>
@@ -151,20 +151,20 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Tentitive Shipment Date<small>*</small></label>
-									<input id="shippmentdate" name="form_subject" class="form-control required" type="text" placeholder="Enter Shipment Date">
+									<input id="shippmentdate" name="form_subject" class="form-control" type="text" placeholder="Enter Shipment Date" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Due Date</label>
-									<input id="duedate" name="form_phone" class="form-control required" type="text" placeholder="Enter Due Date">
+									<input id="duedate" name="form_phone" class="form-control" type="text" placeholder="Enter Due Date" required>
 								</div>
 							</div>
 						</div>
 						
 						<div class="mb-3">
 							<label>Other Information related to Goods and Packages</label>
-							<textarea id="otherinfo" name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+							<textarea id="otherinfo" name="form_message" class="form-control" rows="5" placeholder="Enter Message" required></textarea>
 						</div>
 
 						<br><br>
@@ -247,6 +247,9 @@
 
 <script>
 	function senddata(){
+		
+	}
+	function send(){
 	let name = document.getElementById("name").value;
 	let mail = document.getElementById("mail").value;
 	let subject = document.getElementById("subject").value;
@@ -268,12 +271,12 @@ console.log(body)
 	// console.log(body)
 	Email.send({
 	SecureToken :"6819767b-bb1e-42cd-9f70-2041df18a2a5",
-    To : 'saharamaritime@hotmail.com',
+    To : 'bhaskarchavan2001@gmail.com',
     From : "mailsaharamaritime@gmail.com",
     Subject : subject,
     Body : body
 }).then(
-  message => alert("Form submitted successfully!")
+  message => alert(message)
 );}
 </script>
 <script>
