@@ -70,13 +70,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Name <small>*</small></label>
-									<input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+									<input id="name" name="form_name" class="form-control required" type="text" placeholder="Enter Name">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Email <small>*</small></label>
-									<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+									<input id="mail" name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
 								</div>
 							</div>
 						</div>
@@ -84,13 +84,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Subject <small>*</small></label>
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+									<input id="subject" name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Phone *</label>
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+									<input id="phone" name="form_phone" class="form-control required" type="text" placeholder="Enter Phone">
 								</div>
 							</div>
 						</div>
@@ -98,19 +98,19 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Company Name <small>*</small></label>
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Company Name">
+									<input id="cname" name="form_subject" class="form-control required" type="text" placeholder="Enter Company Name">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>GST No.</label>
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter GST No.">
+									<input id="gstno" name="form_phone" class="form-control" type="text" placeholder="Enter GST No.">
 								</div>
 							</div>
 						</div>
 						<div class="mb-3">
 							<label>Full Address *</label>
-							<textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Address"></textarea>
+							<textarea id="faddrss" name="form_message" class="form-control required" rows="5" placeholder="Enter Address"></textarea>
 						</div>
 
 
@@ -123,13 +123,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Service Type<small>*</small></label>
-									<input name="form_name" class="form-control" type="text" placeholder="Enter Service Type">
+									<input id="service" name="form_name" class="form-control required" type="text" placeholder="Enter Service Type">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Country of Origin<small>*</small></label>
-									<input name="form_email" class="form-control required text" type="text" placeholder="Enter Country of Origin">
+									<input id="country_origin" name="form_email" class="form-control required text" type="text" placeholder="Enter Country of Origin">
 								</div>
 							</div>
 						</div>
@@ -137,13 +137,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Country of Destination<small>*</small></label>
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Country of Destination">
+									<input id="country_dest" name="form_subject" class="form-control required" type="text" placeholder="Enter Country of Destination">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Container Type</label>
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter Container Type">
+									<input id="container_type" name="form_phone" class="form-control required" type="text" placeholder="Enter Container Type">
 								</div>
 							</div>
 						</div>
@@ -151,20 +151,20 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Tentitive Shipment Date<small>*</small></label>
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Shipment Date">
+									<input id="shippmentdate" name="form_subject" class="form-control required" type="text" placeholder="Enter Shipment Date">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label>Due Date</label>
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter Due Date">
+									<input id="duedate" name="form_phone" class="form-control required" type="text" placeholder="Enter Due Date">
 								</div>
 							</div>
 						</div>
 						
 						<div class="mb-3">
 							<label>Other Information related to Goods and Packages</label>
-							<textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+							<textarea id="otherinfo" name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
 						</div>
 
 						<br><br>
@@ -173,12 +173,12 @@
 						</div>
 						<div class="mb-3">
 							<label>Any other Additional Information</label>
-							<textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+							<textarea id="addinfo" name="form_message" class="form-control" rows="5" placeholder="Enter Message"></textarea>
 						</div>
 						<br><br>
 						<div class="mb-3 text-center">
 							<input name="form_botcheck" class="form-control" type="hidden" value="" />
-							<button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
+							<button type="submit" onclick="senddata()" class="theme-btn btn-style-one"><span class="btn-title">Send message</span></button>
 							<button type="reset" class="theme-btn btn-style-one"><span class="btn-title">Reset</span></button>
 						</div>
 					</form>
@@ -213,10 +213,12 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <!-- form submit -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.form.min.js"></script>
+
 <script>
 	(function($) {
 		$("#contact_form").validate({
@@ -241,6 +243,50 @@
 			}
 		});
 	})(jQuery);
+</script>
+
+<script>
+	function senddata(){
+	let name = document.getElementById("name").value;
+	let mail = document.getElementById("mail").value;
+	let subject = document.getElementById("subject").value;
+	let phone = document.getElementById("phone").value;
+	let cname = document.getElementById("cname").value;
+	let gstno = document.getElementById("gstno").value;
+	let faddrss = document.getElementById("faddrss").value;
+	let service = document.getElementById("service").value;
+	let country_origin = document.getElementById("country_origin").value;
+	let country_dest = document.getElementById("country_dest").value;
+	let container_type = document.getElementById("container_type").value;
+	let shippmentdate = document.getElementById("shippmentdate").value;
+	let duedate = document.getElementById("duedate").value;
+	let otherinfo = document.getElementById("otherinfo").value;
+	let addinfo = document.getElementById("addinfo").value;	
+	
+	let body="Name: "+name+"<br> Email: "+mail+"<br> subject: "+subject+"<br> phone: "+phone+"<br> comapany name: "+cname+"<br> GST No.: "+gstno+"<br> full address: "+faddrss+"<br> service type: "+service+"<br> country of origin: "+country_origin+"<br> country of destination:  "+country_dest+"<br> container type: "+container_type+"<br> tentitive shipment date: "+shippmentdate+"<br> Due date: "+duedate+"<br> other info related to goods & packages: "+otherinfo+"<br> addition information: "+addinfo;
+console.log(body)
+	// console.log(body)
+	Email.send({
+	SecureToken :"6819767b-bb1e-42cd-9f70-2041df18a2a5",
+    To : 'saharamaritime@hotmail.com',
+    From : "mailsaharamaritime@gmail.com",
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert("Form submitted successfully!")
+);}
+</script>
+<script>
+	const form = document.getElementById('contact_form');
+
+form.addEventListener('submit', function handleSubmit(event) {
+  event.preventDefault();
+
+  // 👇️ Send data to the server here
+
+  // 👇️ Reset the form here
+  form.reset();
+});
 </script>
 </body>
 
