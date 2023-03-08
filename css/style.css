@@ -4509,6 +4509,15 @@ Section Title
   border: 3px solid var(--border-theme-color3-light);
   border-radius: 20px;
 }
+
+
+
+#mail2{
+  width: 110px;
+}
+
+
+
 .range-slider-one .ui-widget-content .ui-state-default {
   top: -5px;
   width: 20px;
